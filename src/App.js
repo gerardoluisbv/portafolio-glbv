@@ -1,11 +1,22 @@
 
 import './App.css';
+
+
+
 import Home from './components/Home';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
+import styled  from 'styled-components';
 
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+
+const AppWrapper = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+`;
 
 function App() {
 
@@ -23,9 +34,13 @@ function App() {
   } 
 
   return (
-    <>
 
-<Particles
+
+
+
+
+    <AppWrapper>
+      <Particles
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
@@ -61,7 +76,7 @@ function App() {
             color: "#3fa9f5",
             distance: 150,
             enable: true,
-            opacity: 0.2,
+            opacity: 0.1,
             width: 1,
           },
           collisions: {
@@ -85,7 +100,7 @@ function App() {
             value: 80,
           },
           opacity: {
-            value: 0.5,
+            value: 0.1,
           },
           shape: {
             type: "circle",
@@ -97,17 +112,12 @@ function App() {
         detectRetina: true,
       }}
     />
-
-
-    <div style={{ minHeight: '100vh',
-                  display: 'flex',
-                  flexDirection: 'column' }}>
+        <Navbar/>
+        <Home/>
+        <Footer/>
+    </AppWrapper>
      
-      <Navbar />
-      <Home/>
 
-    </div>
-    </>
   );
 }
 

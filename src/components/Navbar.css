@@ -40,8 +40,9 @@
     bottom: 0;
     z-index: 820;
     overflow-y: auto;
-    background-color: #f2f6f7;
+    background-color: #1a1b26;
     transition: 0.25s ease-out;
+    color: aliceblue;
   }
   
   .nav-menu.active {
