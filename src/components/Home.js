@@ -24,7 +24,7 @@ const Home = () => {
         <div className="content_home">
           <h3>
           I am a front-end developer focused on crafting  
-          clean & user‑friendly experiences, I am passionate 
+          clean & user-friendly experiences, I am passionate 
           about creating quality software that solves problems.  
           I am always in continuous learning to be able to improve
             every day.

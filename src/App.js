@@ -85,7 +85,7 @@ function App() {
             value: 80,
           },
           opacity: {
-            value: 0.2,
+            value: 0.5,
           },
           shape: {
             type: "circle",
