@@ -6,21 +6,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: space-between;
+    align-items: center;
     transform: translateZ(0);
     z-index: 900;
    
-    border-bottom: 1px solid rgba(135, 153, 160, 0.25);
+
   }
   
   .navbar-header__container {
     
     display: flex;
     height: 65px;
-    padding: 0 29px;
+    width: 90%;
+    
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 16px 24px -32px rgb(241, 238, 238);
+  
   
   }
   
@@ -29,12 +30,13 @@
   .nav-menu {
     box-shadow: 6px 0 15px rgb(0 0 0 / 20%);
   
-    left: -240px;
+    left: -100%;
     transform: translatex(0);
     width: 220px;
     transition: 0.25s ease-out;
-    padding-top: 89px;
-    width: 194px;
+  
+    width: 100%;
+    height: 100%;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -47,20 +49,24 @@
   
   .nav-menu.active {
     left: 0;
-    transition: 350ms;
+    transition: 500ms;
   }
   
   /* cada icono del menu que se despliega */
   .nav-text {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 8px 0px 8px 30px;
-    list-style: none;
+    justify-content: space-around;
+
+    
     height: 60px;
   }
+
   
-  
+  .nav-menu-items {
+    
+    align-self: center;
+    width: 100%;
+  }
   
   a {
     color: #0093d3;
@@ -75,9 +81,7 @@
     text-decoration-color: initial;
   }
   
-  .nav-text:hover {
-    background-color: #c1c1c1;
-  }
+ 
   
   .nav-menu-items {
     width: 100%;
@@ -86,6 +90,7 @@
   
   span {
     margin-left: 16px;
+    font-size: 1.4em;
   }
   
   /* parte de atras cuando se despliega en menu wue se torna opaca*/
@@ -104,34 +109,9 @@
     visibility: visible;
   }
   
-  /* estilo de GNB */
-  .gb-header__brand {
-    position: relative;
-  
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    justify-content: center;
-  }
+ 
   
   
-  
-  .nav-right .icons-cart {
-    position: relative;
-    min-width: 28px;
-    max-height: 28px;
-    margin-left: 3px;
-    
-  }
-  
-  .nav-cart {
-    position: relative;
-    font-size: 21px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
   
   /* div del lado derecho del header, contiene el icon user y cart */
   .nav-right {
@@ -145,21 +125,7 @@
   }
   
   
-  
-  /* clase que se le aplica al numero que estan dentro del carrito de compras */
-  /* span con un sosition absolute que esta dentro de un div con position relative */
-  
-  .nav-cart-count {
-    position: absolute;
-    top: -6px;
-    left: 49.5%;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
+
   .nav-left {
     position: relative;
     font-size: 21px;
@@ -180,36 +146,66 @@
   
   .iconLogoMenu {
     position: relative;
-    min-width: 160px;
-    margin-left: 10px;
+    min-width: 150px;
+ 
+  
   }
 
 
   
   .icons {
     position: relative;
-    min-width: 20px;
-    max-height: 20px;
+    min-width: 40px;
+    max-height: 40px;
     
   }
   
-  /* CAMBIA PROPIEDADES DEL DIV DONDE ESTA  EL ICONO DE HAMBURGUESA */
-  
-  @media screen and (max-width: 550px) {
-    /* LE QUITA PADDING AL MENU HAMBURGUESA EN TAMAÑO CELLPHONE */
-    .navbar-header__container {
-      padding: 0 18px;
-    }
+/* CAMBIA PROPIEDADES DEL DIV DONDE ESTA  EL ICONO DE HAMBURGUESA */
+
+@media screen and (max-width: 550px) {
+  /* LE QUITA PADDING AL MENU HAMBURGUESA EN TAMAÑO CELLPHONE */
+  .icons {
+    
+    right: .9em;
+    position: relative;
+    min-width: 70px;
+    max-height: 70px;
+    
   }
+
+
+}
+
+/* ESCRITORIO EXTRAGRANDE */
   
-  @media screen and (max-width: 991px) {
-    .nav-menu {
-      /* el menu que se despliega se agranda un poco mas */
-      box-shadow: 6px 0 15px rgb(0 0 0 / 20%);
-      left: -240px;
-      transform: translatex(0);
-      width: 250px;
-      transition: 0.25s ease-out;
-    }
+@media only screen and (min-width: 1200px) {
+
+  .navbar-header__container {
+    
+    display: flex;
+    height: 65px;
+    width: 95%;
+    
+    justify-content: space-between;
+    align-items: center;
+  
+  
   }
+
+  .icons {
+    
+    right: 0.6em;
+    position: relative;
+    min-width: 60px;
+    max-height: 60px;
+    
+  }
+
+}
+
+/* ESCRITORIO GRANDE  */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   
+
+}
+

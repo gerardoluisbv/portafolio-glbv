@@ -1,7 +1,7 @@
 import "./App.css";
 
 import Home from "./components/Home";
-import Navbar from "./components/Navbar";
+import Navbar from "../src/components/ui/Navbar";
 import Footer from "./components/Footer";
 
 import styled from "styled-components";
@@ -51,7 +51,7 @@ function App() {
             },
             modes: {
               push: {
-                quantity: 4,
+                quantity: 0,
               },
               repulse: {
                 distance: 200,
@@ -61,7 +61,7 @@ function App() {
           },
           particles: {
             color: {
-              value: "#640175",
+              value: "#3fa9f5",
             },
             links: {
               color: "#3fa9f5",
@@ -81,14 +81,14 @@ function App() {
               },
               random: false,
               speed: 1,
-              straight: false,
+              straight: true,
             },
             number: {
               density: {
                 enable: true,
-                area: 600,
+                area: 1500,
               },
-              value: 80,
+              value: 120,
             },
             opacity: {
               value: 0.2,
@@ -97,7 +97,7 @@ function App() {
               type: "circle",
             },
             size: {
-              value: { min: 1, max: 5 },
+              value: { min: 1, max: 1 },
             },
           },
           detectRetina: true,

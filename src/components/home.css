@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     height: 100%;
+    z-index: 1;
 
  }
 
@@ -53,9 +54,10 @@
 
  h1 {
     
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 3.5em;
+  
+   font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2.2em;
 
     margin: 0 auto 0px auto;   
     color: #fff;
@@ -73,7 +75,7 @@
  h3 {
     font: 1.2em 'Lato', sans-serif;
     text-align: center;
-    padding: 15px 15px;
+    padding: 0.1em 0.5em;
     line-height : 25px;
  }
 
@@ -153,37 +155,45 @@
 
 /* ESCRITORIO GRANDE  */
  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .homeImage {
-      background-image: url(https://res.cloudinary.com/dkrmpxrnl/image/upload/v1647132901/ygs9wy86fbbd0lzqlnol.jpg);
-      /*background-image: url(https://images.deliveryhero.io/image/pedidosya/home-backgrounds/home-background-pa.jpg?quality=100&width=1345), url(https://images.deliveryhero.io/image/pedidosya/home-backgrounds/home-background-others.jpg?quality=100&width=1345);*/
-      background-position: center center;
-  
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-bottom: 20px;
-      display: flex;
-      flex-direction: column;
-      -webkit-box-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      align-items: center;
-      height: 84vh;
-    }
-  
-    .content_about {
-      width: 60%;
-      margin-top: 10px;
-    }
-  
+    
+       .homeImage {
+       
+        background-size: cover;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        height: 84vh;
+      }
+
+      .container_home .content_about h1 {
+          font-size: 5em;
+          letter-spacing: -2px;
+          font-weight: 700;
+          font-family: 'Open Sans', sans-serif;
+      }
+    
+      .content_about {
+        width: 60%;
+        margin-top: 10px;
+      }
      
+      h3 {
+          font-size: 1.4em;
+          line-height : 1.4em;
+      }
+
+       
  blockquote {
    background:  rgba(150, 150, 150, 0.03);
    border-left: 2px solid aliceblue;
-   margin: 1.5em 0.5em;
+   margin: 1.5em 10em;
    padding: 1em 2em;
    font-style: italic;
  }
-    
   }
   
   
