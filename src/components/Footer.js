@@ -7,23 +7,12 @@ const FooterWrapper = styled.footer`
   justify-content: center;
   align-items: center;
   min-height: 100%;
-  background-color: #1a1b26;
   padding-bottom: 0px;
   margin-bottom: 0px;
   z-index: 900;
 `;
 
-const ContentWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
 
-  padding-top: 10px;
-  width: 90%;
-
-  @media (max-width: 1024px) {
-    grid-template-columns: 2fr 2fr;
-  }
-`;
 
 const CopyrightFooter = styled.div`
   font-family: Lato;
@@ -36,13 +25,7 @@ const CopyrightFooter = styled.div`
   text-align: left;
 `;
 
-const ItemFooter = styled.h2`
-  font-family: Lato;
-  font-size: 12px;
-  font-weight: 400;
-  color: rgb(255, 255, 255);
-  margin: 8px 0px 0px;
-`;
+
 
 const Line = styled.hr`
   width: 90%;
@@ -54,25 +37,7 @@ const Line = styled.hr`
 export const Footer = () => {
   return (
     <FooterWrapper>
-      <ContentWrapper>
-        <div>
-          <ItemFooter> About me </ItemFooter>
-          
-        </div>
-        <div>
-          <ItemFooter>  </ItemFooter>
-          <ItemFooter> Social </ItemFooter>
-        </div>
-        <div>
-          <ItemFooter> Politics </ItemFooter>
-          
-        </div>
-        <div>
-          <ItemFooter> Contact </ItemFooter>
-        </div>
-      </ContentWrapper>
-
-      <Line />
+        <Line />
       <CopyrightFooter>Gerardoluisbv © 2010-2022</CopyrightFooter>
     </FooterWrapper>
   );

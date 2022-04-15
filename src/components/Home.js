@@ -16,13 +16,16 @@ const Home = () => {
             <div className="title_home">
               <h1>I'm Gerardo.</h1>
             </div>
+            
             <h3>
-              I am a front-end developer focused on crafting <br/>clean &
-              user-friendly experiences, I am passionate <br/> about creating quality
-              software that solves <br/> problems. I am always in continuous <br/> learning
-              to be able to improve every day.
+              I am <b>Front-end Developer </b> <br/> 
+              focused on crafting clean and user-friendly <br/>
+              experiences, I am passionate about creating <br/> 
+              quality software that solves problems. <br/>
+              <blockquote>I am always in continuous learning <br/> 
+               to be able to improve every day. </blockquote>
             </h3>
-
+            
 
        
 
