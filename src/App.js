@@ -1,13 +1,10 @@
+import "./App.css";
 
-import './App.css';
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-
-
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-
-import styled  from 'styled-components';
+import styled from "styled-components";
 
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -19,7 +16,6 @@ const AppWrapper = styled.div`
 `;
 
 function App() {
-
   const particlesInit = async (main) => {
     console.log(main);
 
@@ -31,93 +27,86 @@ function App() {
 
   const particlesLoaded = (container) => {
     console.log(container);
-  } 
+  };
 
   return (
-
-
-
-
-
     <AppWrapper>
       <Particles
-      id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
-      options={{
-        fpsLimit: 30,
-        interactivity: {
-          events: {
-            onClick: {
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={{
+          fpsLimit: 30,
+          interactivity: {
+            events: {
+              onClick: {
+                enable: true,
+                mode: "push",
+              },
+              onHover: {
+                enable: true,
+                mode: "repulse",
+              },
+              resize: true,
+            },
+            modes: {
+              push: {
+                quantity: 4,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+            },
+          },
+          particles: {
+            color: {
+              value: "#640175",
+            },
+            links: {
+              color: "#3fa9f5",
+              distance: 150,
               enable: true,
-              mode: "bubble",
+              opacity: 0.1,
+              width: 1,
             },
-            onHover: {
+            collisions: {
               enable: true,
-              mode: "repulse",
             },
-            resize: true,
-          },
-          modes: {
-            push: {
-              quantity: 4,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
-            },
-          },
-        },
-        particles: {
-          color: {
-            value: "#640175",
-          },
-          links: {
-            color: "#3fa9f5",
-            distance: 150,
-            enable: true,
-            opacity: 0.1,
-            width: 1,
-          },
-          collisions: {
-            enable: true,
-          },
-          move: {
-            direction: "none",
-            enable: true,
-            outModes: {
-              default: "bounce",
-            },
-            random: false,
-            speed: 3,
-            straight: false,
-          },
-          number: {
-            density: {
+            move: {
+              direction: "none",
               enable: true,
-              area: 600,
+              outModes: {
+                default: "bounce",
+              },
+              random: false,
+              speed: 1,
+              straight: false,
             },
-            value: 80,
+            number: {
+              density: {
+                enable: true,
+                area: 600,
+              },
+              value: 80,
+            },
+            opacity: {
+              value: 0.1,
+            },
+            shape: {
+              type: "circle",
+            },
+            size: {
+              value: { min: 1, max: 5 },
+            },
           },
-          opacity: {
-            value: 0.1,
-          },
-          shape: {
-            type: "circle",
-          },
-          size: {
-            value: { min: 1, max: 5 },
-          },
-        },
-        detectRetina: true,
-      }}
-    />
-        <Navbar/>
-        <Home/>
-        <Footer/>
+          detectRetina: true,
+        }}
+      />
+      <Navbar />
+      <Home />
+      <Footer />
     </AppWrapper>
-     
-
   );
 }
 

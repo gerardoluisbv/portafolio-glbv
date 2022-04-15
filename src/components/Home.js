@@ -11,15 +11,15 @@ const Home = () => {
   return (
     <div className="home">
       
-        <div className="container_home">
+        <div className="container_home homeImage">
           <div className="content_about">
             <div className="title_home">
               <h1>I'm Gerardo.</h1>
             </div>
             <h3>
-              I am a front-end developer focused on crafting clean &
-              user-friendly experiences, I am passionate about creating quality
-              software that solves problems. I am always in continuous learning
+              I am a front-end developer focused on crafting <br/>clean &
+              user-friendly experiences, I am passionate <br/> about creating quality
+              software that solves <br/> problems. I am always in continuous <br/> learning
               to be able to improve every day.
             </h3>
 
@@ -70,6 +70,7 @@ const Home = () => {
           </div>
         </div>
         </div>
+
         </div>
       </div>
   
