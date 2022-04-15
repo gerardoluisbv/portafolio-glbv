@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import { SidebarData } from '../data/sidebarData';
-import './navbar.css';
+import './Navbar.css';
 
 import menuBurguer from "../../src/menuBurguerWhite.svg";
 import menuBurguerClose from "../../src/closeMenuWhiteX.svg";
