@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { SidebarData } from "../../data/sidebarData";
+
 import "./Navbar.css";
 
 import menuBurguer from "../../../src/menuBurguerWhite.svg";
@@ -70,7 +70,8 @@ export const Navbar = () => {
             </li>
 
             <li className="nav-text">
-              <span> Contact </span>
+              <span> Contact
+                 </span>
               
             </li>
           </ul>
