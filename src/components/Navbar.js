@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 
 import { SidebarData } from '../data/sidebarData';
-import './Navbar.css';
+import './navbar.css';
 
-import menuBurguer from "../../src/menuBurguer.svg";
+import menuBurguer from "../../src/menuBurguerWhite.svg";
+import menuBurguerClose from "../../src/closeMenuWhiteX.svg";
 import lconoMenuSvg from "../../src/logoGerardoluisbvAI.svg";
 
-import iconUser from "../../src/iconUser.svg";
+
 
 
 export const Navbar = () => {
@@ -20,17 +21,17 @@ export const Navbar = () => {
         <div className="navbar-header__container">
           <div className="gb-header__brand">
             <div className="nav-left" onClick={showSidebar}>
-               <img className="icons" src={menuBurguer} alt="logo" style={ {width:'20px'} }/>
+             <img className="icons" src={sidebar ? menuBurguerClose : menuBurguer} alt="logo" />
             </div>
 
             <div className="nav-left">
-               <img className="iconLogoMenu" src={lconoMenuSvg} alt="logo" />
+              
             </div>
           </div>
 
           <div className="gb-header__brand">
             <div className="nav-right">
-               <img className="icons" src={iconUser} alt="logo" />
+              <img className="iconLogoMenu" src={lconoMenuSvg} alt="logo" />
             </div>
             <div className=" nav-right">
               <div className="nav-cart">
