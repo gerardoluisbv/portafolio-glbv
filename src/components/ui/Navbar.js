@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./Navbar.css";
 
@@ -75,11 +75,11 @@ export const Navbar = () => {
               className={({ isActive }) =>
                 "nav-text" + (isActive ? " activated" : "")
               }
+
               to="/testimonials"
             >
               <span> Testimonials </span>
              </NavLink>
-
 
 
             <NavLink

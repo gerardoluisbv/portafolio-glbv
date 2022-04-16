@@ -1,10 +1,5 @@
 import "./App.css";
 
-import Home from "./components/Home";
-import Navbar from "../src/components/ui/Navbar";
-import Footer from "./components/Footer";
-
-
 
 import styled from "styled-components";
 
@@ -38,7 +33,7 @@ function App() {
        
            <AppRouter />
       
-      
+
       </AppWrapper>
 
 
