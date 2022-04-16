@@ -4,10 +4,13 @@ import Home from "./components/Home";
 import Navbar from "../src/components/ui/Navbar";
 import Footer from "./components/Footer";
 
+
+
 import styled from "styled-components";
 
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { AppRouter } from "./routers/AppRoutes";
 
 const AppWrapper = styled.div`
   min-height: 100vh;
@@ -30,7 +33,15 @@ function App() {
   };
 
   return (
-    <AppWrapper>
+    <>
+      <AppWrapper>
+       
+           <AppRouter />
+      
+      
+      </AppWrapper>
+
+
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -103,11 +114,10 @@ function App() {
           detectRetina: true,
         }}
       />
-      <Navbar />
-      <Home />
-      <Footer />
-    </AppWrapper>
-  );
+
+
+    </>
+    );
 }
 
 export default App;

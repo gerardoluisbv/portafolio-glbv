@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 import "./Navbar.css";
 
@@ -13,70 +13,87 @@ export const Navbar = () => {
 
   return (
     <>
-      <header className="navbar navbar-header--main ">
-        {/*<Link to='#' className='menu-bars'>*/}
+      <header className="navbar">
         <div className="navbar-header__container">
-          <div className="gb-header__brand">
-            <div className="nav-left" onClick={showSidebar}>
-              <img
-                className="icons"
-                src={sidebar ? menuBurguerClose : menuBurguer}
-                alt="logo"
-              />
-            </div>
-
-            <div className="nav-left"></div>
+          <div className="nav-left" onClick={showSidebar}>
+            <img
+              className="icons"
+              src={sidebar ? menuBurguerClose : menuBurguer}
+              alt="logo"
+            />
           </div>
 
-          <div className="gb-header__brand">
-            <div className="nav-right">
-              <img className="iconLogoMenu" src={lconoMenuSvg} alt="logo" />
-            </div>
-            <div className=" nav-right">
-              <div className="nav-cart"></div>
-            </div>
+          <div className=" nav-right">
+            <img className="iconLogoMenu" src={lconoMenuSvg} alt="logo" />
           </div>
         </div>
-
-        {/*</Link>*/}
       </header>
 
       <div
         className={sidebar ? "left-col-backdrop active" : "left-col-backdrop"}
         onClick={showSidebar}
       >
-     
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-          <ul className="nav-menu-items" onClick={showSidebar}>
-            <li className="nav-text">
+          <div className="nav-menu-items" onClick={showSidebar}>
+            <NavLink
+              className={({ isActive }) =>
+                "nav-text" + (isActive ? " activated" : "")
+              }
+              to="/"
+            >
               <span> Home </span>
-              
-            </li>
-            <li className="nav-text">
-              <span> About </span>
-              
-            </li>
-            <li className="nav-text">
-              <span> Works </span>
-              
-            </li>
-            <li className="nav-text">
-              <span> Resume </span>
-              
-            </li>
-            <li className="nav-text">
-              <span> Testimonials </span>
-              
-            </li>
+            </NavLink>
 
-            <li className="nav-text">
-              <span> Contact
-                 </span>
-              
-            </li>
-          </ul>
+            <NavLink
+              className={({ isActive }) =>
+                "nav-text" + (isActive ? " activated" : "")
+              }
+              to="/about"
+            >
+              <span> About </span>
+            </NavLink>
+
+            <NavLink
+              className={({ isActive }) =>
+                "nav-text" + (isActive ? " activated" : "")
+              }
+              to="/works"
+            >
+              <span> Works </span>
+            </NavLink>
+
+            <NavLink
+              className={({ isActive }) =>
+                "nav-text" + (isActive ? " activated" : "")
+              }
+              to="/resume"
+            >
+              <span> Resume </span>
+            </NavLink>
+
+            <NavLink
+              className={({ isActive }) =>
+                "nav-text" + (isActive ? " activated" : "")
+              }
+              to="/testimonials"
+            >
+              <span> Testimonials </span>
+             </NavLink>
+
+
+
+            <NavLink
+              className={({ isActive }) =>
+                "nav-text" + (isActive ? " activated" : "")
+              }
+              to="/contact"
+            >
+              <span> Contact</span>
+            
+            </NavLink>
+
+          </div>
         </nav>
-       
       </div>
     </>
   );

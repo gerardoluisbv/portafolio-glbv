@@ -9,7 +9,7 @@ import lconoFacebookMenuSvg from "../../src/social-media-icons/icons8-facebook.s
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home animate__animated animate__fadeIn animate__delay-0.8s">
       
         <div className="container_home homeImage">
           <div className="content_about">
