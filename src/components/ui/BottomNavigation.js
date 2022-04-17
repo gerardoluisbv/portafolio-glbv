@@ -74,7 +74,11 @@ const Content = styled.div`
     
     @media (orientation: landscape) {
          
-       display:none;
+        width: 100%; 
+      
+        flex-direction: column;
+     
+
     }
   
    
@@ -89,16 +93,25 @@ const NavBottom = styled.div`
 
    
      
-    @media (min-width: 990px) and (max-width: 1600px) {
+       
+    @media (min-width: 990px) {
         flex-direction: column;
         justify-content: flex-end;
         align-items:end;
        
     }
 
-   
+ 
+    @media (orientation: landscape) {
+         
+        width: 95%; 
+        flex-direction: column;
+        align-items:end;
+        position: relative;
+        bottom:0;
+     
 
-  
+    }
 
    
 `;
