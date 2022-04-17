@@ -25,6 +25,7 @@ svg {
     width:20px;
     display:flex;
     justify-content:center;
+   
  
   &.active {
     color: #0093d3;
@@ -39,10 +40,14 @@ svg {
       }
   }
 
-  
+       
+  @media (min-width: 990px) and (max-width: 1600px) {
+
+    padding-bottom:15px;   
+}
+
 
   
-
 `;
 
 const Main = styled.div`
@@ -53,7 +58,8 @@ const Main = styled.div`
     width: 100%;
     bottom: 2%;
     z-index:2;
-
+    
+ 
  
 `;
 
@@ -63,7 +69,7 @@ const Content = styled.div`
     flex-direction: row;
     justify-content: flex-end;
     width: 90%;  
-
+    
   
    
 `;
@@ -81,8 +87,11 @@ const NavBottom = styled.div`
         flex-direction: column;
         justify-content: flex-end;
         align-items:end;
-
+       
+       
     }
+
+  
 
   
 
