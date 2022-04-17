@@ -11,6 +11,7 @@ import Works from '../components/Works';
 import Resume from '../components/Resume';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
+import BottomNavigation from '../components/ui/BottomNavigation';
 
 
 
@@ -20,7 +21,7 @@ export const AppRouter = () => {
          <BrowserRouter>
        
             <Navbar />
-               
+            <BottomNavigation />  
                     <Routes>
                         <Route  path="about" element={<About />}/>
                         <Route  path="works" element={<Works />}/>
@@ -28,10 +29,11 @@ export const AppRouter = () => {
                         <Route  path="testimonials" element={<Testimonials />}/>
                         <Route  path="contact" element={<Contact />}/>
                         <Route path="/*" element={<Home />} />
+                       
                     </Routes>
                 
-                </BrowserRouter>
-
+            </BrowserRouter>
+          
             <Footer/>
         </>
     )
