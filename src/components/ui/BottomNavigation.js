@@ -41,10 +41,12 @@ svg {
   }
 
        
-  @media (min-width: 990px) and (max-width: 1600px) {
+  @media (min-width: 990px) {
 
     padding-bottom:15px;   
 }
+
+
 
 
   
@@ -70,6 +72,10 @@ const Content = styled.div`
     justify-content: flex-end;
     width: 90%;  
     
+    @media (orientation: landscape) {
+         
+       display:none;
+    }
   
    
 `;
@@ -88,10 +94,9 @@ const NavBottom = styled.div`
         justify-content: flex-end;
         align-items:end;
        
-       
     }
 
-  
+   
 
   
 
