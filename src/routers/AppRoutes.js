@@ -13,15 +13,22 @@ import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
 import BottomNavigation from '../components/ui/BottomNavigation';
 
+import styled from 'styled-components';
 
+const AppWrapper = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+`;
 
 export const AppRouter = () => {
     return (
         <>     
+       <AppWrapper>
+
          <BrowserRouter>
-       
             <Navbar />
-            <BottomNavigation />  
+            
                     <Routes>
                         <Route  path="about" element={<About />}/>
                         <Route  path="works" element={<Works />}/>
@@ -31,8 +38,10 @@ export const AppRouter = () => {
                         <Route path="/*" element={<Home />} />
                        
                     </Routes>
-                
+                <BottomNavigation />  
             </BrowserRouter>
+
+       </AppWrapper>
           
       
         </>

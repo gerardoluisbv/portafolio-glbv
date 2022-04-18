@@ -33,19 +33,24 @@ svg {
   &.active {
     color: #0093d3;
     
+    height:30px;
    
   
     svg {
         fill:#0093d3;   
         padding-bottom:5px; 
         border-bottom: 2px solid #0093d3;
-       
+        
       }
+
   }
+
+
 
   @media (min-width: 990px) {
     margin-bottom:2vh;
-   
+    width:20px;
+    height:20px;
 }
 
 
@@ -53,7 +58,7 @@ svg {
 `;
 
 const Main = styled.div`
-    position:absolute;
+    position:fixed;
     display: flex;
     flex-direction: row;
     justify-content: center;
