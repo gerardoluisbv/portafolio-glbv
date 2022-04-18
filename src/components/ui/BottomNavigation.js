@@ -56,7 +56,7 @@ svg {
 `;
 
 const Main = styled.div`
-    position:relative;
+    position:fixed;
     display: flex;
     flex-direction: row;
     justify-content: center;
