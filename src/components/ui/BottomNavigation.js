@@ -18,8 +18,7 @@ import IconContact from '../../icons/IconContact';
 const StyledLink = styled(NavLink)`
 
 svg {
-    fill:#FFF;
- 
+    fill: #F0F8FF;
     height:35px;
   }
 
@@ -73,7 +72,7 @@ const Content = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 90%; 
+    width: 85%; 
   
  
    
