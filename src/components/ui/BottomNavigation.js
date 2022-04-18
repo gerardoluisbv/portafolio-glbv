@@ -21,10 +21,13 @@ svg {
     fill:#FFF;
    
   }
+
     
-    width:20px;
+    width:25px;
+    height:25px;
     display:flex;
     justify-content:center;
+    
    
  
   &.active {
@@ -35,18 +38,15 @@ svg {
     svg {
         fill:#0093d3;   
         padding-bottom:5px; 
-        border-bottom: 1px solid #0093d3;
+        border-bottom: 2px solid #0093d3;
        
       }
   }
 
-       
   @media (min-width: 990px) {
-
-    padding-bottom:15px;   
+    margin-bottom:10vh;
+   
 }
-
-
 
 
   
@@ -58,10 +58,9 @@ const Main = styled.div`
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    bottom: 2%;
+    bottom: 20px;
+
     z-index:2;
-    
- 
  
 `;
 
@@ -70,17 +69,9 @@ const Content = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 90%;  
-    
-    @media (orientation: landscape) {
-         
-        width: 100%; 
-      
-        flex-direction: column;
-     
-
-    }
+    width: 90%; 
   
+ 
    
 `;
 
@@ -99,18 +90,6 @@ const NavBottom = styled.div`
         justify-content: flex-end;
         align-items:end;
        
-    }
-
- 
-    @media (orientation: landscape) {
-         
-        width: 95%; 
-        flex-direction: column;
-        align-items:end;
-        position: relative;
-        bottom:0;
-     
-
     }
 
    

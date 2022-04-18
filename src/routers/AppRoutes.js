@@ -4,7 +4,7 @@ import 'animate.css';
 
 import { Routes, Route, BrowserRouter } from "react-router-dom"
 import About from '../components/About';
-import Footer from '../components/Footer';
+
 import Home from '../components/Home';
 import Navbar from '../components/ui/Navbar';
 import Works from '../components/Works';
@@ -34,7 +34,7 @@ export const AppRouter = () => {
                 
             </BrowserRouter>
           
-            <Footer/>
+      
         </>
     )
 }
