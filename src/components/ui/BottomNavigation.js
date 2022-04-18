@@ -19,7 +19,8 @@ const StyledLink = styled(NavLink)`
 
 svg {
     fill:#FFF;
-   
+ 
+    height:35px;
   }
 
     
@@ -61,7 +62,7 @@ const Main = styled.div`
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    bottom: 20px;
+    bottom: 25px;
 
     z-index:2;
  
