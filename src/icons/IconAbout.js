@@ -2,7 +2,7 @@ import React from 'react'
 
 const IconAbout = () => {
   return (
-    <svg id="Capa_7" data-name="Capa 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.74 13.46"><path d="M39.36,24.74H37.89l-13.26.05h0V38.2l2.94-1.68H39.36V24.74ZM37.89,35.05H27l-.86.45V26.21H37.89Zm-5.15-7.37v1.47H31.26V27.68Zm0,2.95v2.94H31.26V30.63Z" transform="translate(-24.63 -24.74)"/></svg>
+    <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18.87"><g id="Capa_2" data-name="Capa 2"><g id="Capa_7" data-name="Capa 7"><path d="M20,1.83A1.83,1.83,0,0,0,18.17,0H1.83A1.83,1.83,0,0,0,0,1.83V18.07a.8.8,0,0,0,1.37.56L4,16H18.17A1.83,1.83,0,0,0,20,14.17ZM18,14H3.18L2,15.17V2H18Z"/><rect x="9.01" y="4" width="2" height="2" rx="1"/><rect x="9.01" y="8" width="2" height="4" rx="1"/></g></g></svg>
   )
 }
 

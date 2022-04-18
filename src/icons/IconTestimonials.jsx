@@ -2,7 +2,7 @@ import React from 'react'
 
 const IconTestimonials = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.57 17.57"><g id="Capa_13" data-name="Capa 13"><path d="M34.26,28.2,21,28.25V41.66l3-1.68H35.73V28.2Zm0,10.31H23.33l-.86.45V29.67H34.26Z" transform="translate(-20.99 -28.2)"/><path d="M42.55,32.36l-6.82,0H34.26v1.46h6.81v9.29l-.86-.46H29.29v-4.1H27.82v5.58H39.61l3,1.68Z" transform="translate(-20.99 -28.2)"/></g></svg>
+    <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.6 16.89"><g id="Capa_13" data-name="Capa 13"><path d="M13.27,0,1,.05a1,1,0,0,0-1,1V11.72a1,1,0,0,0,1.52.89l1.25-.7a1,1,0,0,1,.5-.13H13.72a1,1,0,0,0,1-1V1a1,1,0,0,0-1-1Zm0,9.29a1,1,0,0,1-1,1H2.34l-.86.45V2.49a1,1,0,0,1,1-1h9.75a1,1,0,0,1,1,1Z" transform="translate(-0.01)"/><path d="M21.56,5.18a1,1,0,0,0-1-1H13.87a.6.6,0,0,0-.6.6V5a.6.6,0,0,0,.6.6h5.19a1,1,0,0,1,1,1v8.27l-.86-.46H9.32a1,1,0,0,1-1-1V11a.6.6,0,0,0-.6-.6H7.43a.6.6,0,0,0-.6.6v4a1,1,0,0,0,1,1h10.5a1,1,0,0,1,.5.13l1.24.69a1,1,0,0,0,1.52-.89Z" transform="translate(-0.01)"/></g></svg>
   )
 }
 

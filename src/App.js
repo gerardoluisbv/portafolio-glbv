@@ -1,17 +1,11 @@
 import "./App.css";
 
 
-import styled from "styled-components";
-
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { AppRouter } from "./routers/AppRoutes";
 
-const AppWrapper = styled.div`
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-`;
+
 
 function App() {
   const particlesInit = async (main) => {
@@ -29,13 +23,12 @@ function App() {
 
   return (
     <>
-      <AppWrapper>
+      
        
            <AppRouter />
       
 
-      </AppWrapper>
-
+   
 
       <Particles
         id="tsparticles"
