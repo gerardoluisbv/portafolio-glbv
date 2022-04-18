@@ -44,7 +44,7 @@ svg {
   }
 
   @media (min-width: 990px) {
-    margin-bottom:10vh;
+    margin-bottom:2vh;
    
 }
 
