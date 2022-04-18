@@ -32,15 +32,13 @@ svg {
  
   &.active {
     color: #0093d3;
-    
-    height:30px;
-   
+ 
   
     svg {
         fill:#0093d3;   
-        padding-bottom:5px; 
         border-bottom: 2px solid #0093d3;
-        
+        margin-bottom:2px;
+        padding-bottom:2px;
       }
 
   }
