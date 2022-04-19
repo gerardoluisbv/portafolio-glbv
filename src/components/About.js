@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-import myPdf from './gerardoluisbv-resume.pdf';
+import myPdf from './Frontend-Developer-CV.pdf';
 
 const About = () => {
   return (
