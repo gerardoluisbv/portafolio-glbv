@@ -11,7 +11,7 @@
   
     display: flex;
     justify-content: center;
-    height: 100%;
+    min-height: 100%;
     z-index: 1;
 
  }
@@ -118,12 +118,10 @@
     .homeImage {
        
       
-        margin-bottom: 20px;
+       
         display: flex;
         flex-direction: rw;
-        -webkit-box-pack: center;
         justify-content: center;
-        -webkit-box-align: center;
         align-items: center;
         height: 80%;
       }
@@ -162,19 +160,16 @@
        .homeImage {
        
         background-size: cover;
-        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
-        -webkit-box-pack: center;
         justify-content: center;
-        -webkit-box-align: center;
         align-items: center;
         height: 80%;
       }
 
       .container_home .content_about h1 {
-          font-size: 5em;
-        
+          font-size: 2em;
+          letter-spacing: -2px;
           font-weight: 700;
           font-family: 'Open Sans', sans-serif;
       }
