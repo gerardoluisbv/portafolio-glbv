@@ -75,10 +75,14 @@
  h3 {
     font: 1.2em 'Lato', sans-serif;
     text-align: center;
-    padding: 0.1em 0.5em;
+    padding: 0.5em 1.2em;
     line-height : 25px;
  }
 
+ #svg-buttom {
+   width: 25px;
+
+ }
  
  blockquote {
    background:  rgba(150, 150, 150, 0.03);

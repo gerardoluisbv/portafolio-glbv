@@ -65,13 +65,13 @@
 
   
   .nav-menu-items {
-    
+    transform: translatex(0);
     align-self: center;
     width: 100%;
   }
   
   a.activated {
-    color: #0093d3;
+    color: #61dafb;
     
   }
 

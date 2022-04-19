@@ -17,17 +17,15 @@ import IconContact from '../../icons/IconContact';
 
 const StyledLink = styled(NavLink)`
 
+width:25px;
+height:25px;
+display:flex;
+justify-content:center;
+
 svg {
     fill: #F0F8FF;
     height:35px;
   }
-
-    
-    width:25px;
-    height:25px;
-    display:flex;
-    justify-content:center;
-    
    
  
   &.active {
