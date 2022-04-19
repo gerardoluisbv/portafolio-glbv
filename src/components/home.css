@@ -80,8 +80,7 @@
  }
 
  #svg-buttom {
-   width: 25px;
-
+   width: 15px;
  }
  
  blockquote {
@@ -118,15 +117,15 @@
 
     .homeImage {
        
-        background-size: cover;
+      
         margin-bottom: 20px;
         display: flex;
-        flex-direction: column;
+        flex-direction: rw;
         -webkit-box-pack: center;
         justify-content: center;
         -webkit-box-align: center;
         align-items: center;
-        height: 84vh;
+        height: 80%;
       }
 
       .container_home .content_about h1 {
@@ -170,12 +169,12 @@
         justify-content: center;
         -webkit-box-align: center;
         align-items: center;
-        height: 84vh;
+        height: 80%;
       }
 
       .container_home .content_about h1 {
           font-size: 5em;
-          letter-spacing: -2px;
+        
           font-weight: 700;
           font-family: 'Open Sans', sans-serif;
       }
