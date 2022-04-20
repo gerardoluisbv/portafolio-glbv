@@ -13,18 +13,19 @@ const Home = () => {
       
         <div className="container_home homeImage">
           <div className="content_about">
-            <div className="title_home">
-              <h1>I'm Gerardo.</h1>
+            <div >
+              <h1 className="title_principal"> Hola, soy Gerardo.</h1>
             </div>
             
             <div className="contact_details">
               <h3>
-              Soy desarrollador  <b>front-end </b> enfocado en crear interfaces de usuario  limpias y fáciles de 
-              usar, me apasiona crear software de  calidad que resuelva problemas y mejoren la calidad
-               de vida de las personas, Apasionado por el diseño gráfico.
+              Me dedico al desarrollo  <b>front-end </b> y me enfoco en q crear interfaces 
+              de usuario  limpias y fáciles de usar, me apasiona crear software de  
+              calidad que resuelva problemas y mejoren la calidad
+               de vida de las personas.
               
                
-                  <blockquote> Siempre estoy en continuo aprendizaje 
+                  <blockquote> Siempre estoy en continuo aprendizaje para mejorar cada dia 
                   con una proyección clara de dirigir equipos a futuro.</blockquote>
               
                 </h3>

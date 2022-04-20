@@ -36,16 +36,24 @@ body {
 
 button {
   height: 44px;
-  width: 80%;
+  width: 90%;
   color: #1a1b26;
   border-radius: 5px ;
   border: none;
   cursor: pointer;
   
+  opacity: 0.8;
+  transition: 0.3s;
 }
 
+button:hover {opacity: 1}
 
+svg {
+  opacity: 0.8;
+  transition: 0.2s;
+}
 
+svg:hover {opacity: 1}
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;

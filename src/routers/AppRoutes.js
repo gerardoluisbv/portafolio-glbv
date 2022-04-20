@@ -9,7 +9,6 @@ import Home from '../components/Home';
 import Navbar from '../components/ui/Navbar';
 import Works from '../components/Works';
 import Resume from '../components/Resume';
-import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
 import BottomNavigation from '../components/ui/BottomNavigation';
 
@@ -33,7 +32,6 @@ export const AppRouter = () => {
                         <Route  path="about" element={<About />}/>
                         <Route  path="works" element={<Works />}/>
                         <Route  path="resume" element={<Resume />}/>
-                        <Route  path="testimonials" element={<Testimonials />}/>
                         <Route  path="contact" element={<Contact />}/>
                         <Route path="/*" element={<Home />} />
                        
