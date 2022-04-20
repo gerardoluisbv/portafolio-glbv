@@ -19,7 +19,7 @@ const Home = () => {
             
             <div className="contact_details">
               <h3>
-              Me dedico al desarrollo  <b>front-end </b> y me enfoco en q crear interfaces 
+              Me dedico al desarrollo  <b>front-end </b> y me enfoco en crear interfaces 
               de usuario  limpias y fáciles de usar, me apasiona crear software de  
               calidad que resuelva problemas y mejoren la calidad
                de vida de las personas.
