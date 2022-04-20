@@ -41,7 +41,7 @@ export const Navbar = () => {
               }
               to="/"
             >
-              <span> Home </span>
+              <span> Principal </span>
             </NavLink>
 
             <NavLink
@@ -50,7 +50,7 @@ export const Navbar = () => {
               }
               to="/about"
             >
-              <span> About </span>
+              <span> Acerca de mi </span>
             </NavLink>
 
             <NavLink
@@ -59,7 +59,7 @@ export const Navbar = () => {
               }
               to="/works"
             >
-              <span> Works </span>
+              <span> Trabajos </span>
             </NavLink>
 
             <NavLink
@@ -68,18 +68,8 @@ export const Navbar = () => {
               }
               to="/resume"
             >
-              <span> Resume </span>
+              <span> Resumen </span>
             </NavLink>
-
-            <NavLink
-              className={({ isActive }) =>
-                "nav-text" + (isActive ? " activated" : "")
-              }
-
-              to="/testimonials"
-            >
-              <span> Testimonials </span>
-             </NavLink>
 
 
             <NavLink
@@ -88,7 +78,7 @@ export const Navbar = () => {
               }
               to="/contact"
             >
-              <span> Contact</span>
+              <span> Contacto</span>
             
             </NavLink>
 

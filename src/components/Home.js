@@ -17,59 +17,73 @@ const Home = () => {
               <h1>I'm Gerardo.</h1>
             </div>
             
-            <h3>
-              I am <b>Front-end Developer </b> <br/> 
-              focused on crafting clean and user-friendly <br/>
-              experiences, I am passionate about creating <br/> 
-              quality software that solves problems. <br/>
-              <blockquote>I am always in continuous learning <br/> 
-               to be able to improve every day. </blockquote>
-            </h3>
-            
+            <div className="contact_details">
+              <h3>
+              Soy desarrollador  <b>front-end </b> enfocado en crear interfaces de usuario  limpias y fáciles de 
+              usar, me apasiona crear software de  calidad que resuelva problemas y mejoren la calidad
+               de vida de las personas, Apasionado por el diseño gráfico.
+              
+               
+                  <blockquote> Siempre estoy en continuo aprendizaje 
+                  con una proyección clara de dirigir equipos a futuro.</blockquote>
+              
+                </h3>
 
-       
-
-        <hr />
+                </div>
+            <hr/>
         <div className="social_home">
           <div>
             {" "}
+
+          <a href="https://github.com/gerardoluisbv/" target="blank">
             <img
               className="social_icon_home"
               src={lconoGithub}
               alt="logo"
             />{" "}
+          </a>
           </div>
+
           <div>
+          <a href="https://twitter.com/gerardoluisbv/" target="blank">
             {" "}
             <img
               className="social_icon_home"
               src={lconoTwitter}
               alt="logo"
             />{" "}
+            </a>
           </div>
           <div>
             {" "}
+
+          <a href="https://es.stackoverflow.com/users/edit/169399" target="blank">
             <img
               className="social_icon_home"
               src={lconoStackoverflow}
               alt="logo"
             />{" "}
+            </a>
           </div>
           <div>
             {" "}
-            <img
-              className="social_icon_home"
-              src={lconoLinkedin}
-              alt="logo"
-            />{" "}
+            <a href="https://www.linkedin.com/in/gerardoluisbv/" target="blank">
+              <img
+                className="social_icon_home"
+                src={lconoLinkedin}
+                alt="logo"
+              />{" "}
+            </a>
           </div>
           <div>
             {" "}
+            <a href="https://www.facebook.com/gerardo.luis.1654" target="blank" alt="Facebook">
             <img
               className="social_icon_home"
               src={lconoFacebookMenuSvg}
               alt="logo"
             />{" "}
+            </a>
           </div>
         </div>
         </div>

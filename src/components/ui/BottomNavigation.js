@@ -9,7 +9,6 @@ import IconHomeSvg from '../../icons/IconHomeSvg';
 import IconAbout from '../../icons/IconAbout';
 import IconResume from '../../icons/IconResume';
 import IconWorks from '../../icons/IconWorks';
-import IconTestimonials from '../../icons/IconTestimonials';
 import IconContact from '../../icons/IconContact';
 
 
@@ -18,7 +17,6 @@ import IconContact from '../../icons/IconContact';
 const StyledLink = styled(NavLink)`
 
 width:25px;
-height:25px;
 display:flex;
 justify-content:center;
 
@@ -61,8 +59,18 @@ const Main = styled.div`
     width: 100%;
     bottom: 25px;
 
-    z-index:2;
+    z-index:900;
  
+
+    @media (min-width: 990px) {
+       
+       
+        width: 30px;
+        bottom:30px;
+        right:30px;
+       
+    }
+
 `;
 
 const Content = styled.div`
@@ -71,7 +79,6 @@ const Content = styled.div`
     flex-direction: row;
     justify-content: flex-end;
     width: 85%; 
-  
  
    
 `;
@@ -131,14 +138,6 @@ const BottomNavigation = () => {
                         to="/resume"
                     >
                       <IconResume />
-                    </StyledLink>
-
-
-                    <StyledLink
-                                           
-                        to="/testimonials"
-                    >
-                       <IconTestimonials/>
                     </StyledLink>
 
 
