@@ -7,14 +7,11 @@ const Resume = () => {
     <div className="container_home homeImage">
       <div className="content_about">
         <div className="title_home">
-          <h1> Resume </h1>
+          <h1> Resumen </h1>
         </div>
         
         <h3>
-          I am <b>Front-end Developer </b> <br/> 
-          focused on crafting clean and user-friendly <br/>
-          experiences, I am passionate about creating <br/> 
-          quality software that solves problems. <br/>
+          
          
         </h3>
         

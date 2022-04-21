@@ -100,8 +100,10 @@
 
  h3 {
     font: 1.2em 'Lato', sans-serif;
- 
-    line-height : 25px;
+    text-align: justify;
+    padding-left: 3%;
+    padding-right: 3%;
+    line-height : 20px;
  }
 
  #svg-buttom {
@@ -129,6 +131,23 @@
    display: inline;
  }
 
+ #img_proyects {
+  
+   width: 80%;
+ 
+ }
+
+ .content__proyects {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+ }
+
+ h2 > a {
+   color: aqua;
+  
+ }
 
  .social_icon_home{
  
@@ -142,6 +161,7 @@
  }
 
  .social_icon_home:hover {opacity: 1}
+
 
 
  /* ESCRITORIO EXTRA GRANDE  */
@@ -160,7 +180,7 @@
       }
 
       .container_home .content_about h1 {
-          font-size: 5em;
+          font-size: 2em;
           letter-spacing: -2px;
           font-weight: 700;
           font-family: 'Open Sans', sans-serif;
@@ -201,7 +221,7 @@
       }
 
       .container_home .content_about h1 {
-          font-size: 2em;
+          font-size: 1em;
           letter-spacing: -2px;
           font-weight: 700;
           font-family: 'Open Sans', sans-serif;
