@@ -10,8 +10,8 @@ const Works = () => {
             <h1> Proyectos </h1>
           </div>
 
-          <div className="content__proyects">
-            <div id="proyects">
+          <div className='contact_details'>
+         
               <h3>
                 Aplicacion web para crear notas personales, desarrollada
                 utilizando
@@ -27,6 +27,10 @@ const Works = () => {
                 utilizando la libreria <b> SweetAlert2 </b>para dar a los
                 usuarios notificaciones y alertas agradables visualmente
               </h3>
+
+              </div>
+
+
               <br />
               <h2 className="text__link__proyect">
                 <a href="https://github.com/gerardoluisbv/journal-app/"
@@ -48,10 +52,10 @@ const Works = () => {
                 </a>
               </h2>
             </div>
-          </div>
+          
 
           <hr />
-        </div>
+    
       </div>
     </div>
   );

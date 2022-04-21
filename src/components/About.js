@@ -28,7 +28,7 @@ const About = () => {
             
             </h3>
   
-              <h2 className='sub_title'> &nbsp; Contacto  </h2> 
+              <h3 className='sub_title'> Contacto  </h3> 
               <h3> Gerardo Luis B. Velasquez. </h3>
               <h3> Panamá </h3>
               <h3> ( +507 ) 63246164 </h3>
