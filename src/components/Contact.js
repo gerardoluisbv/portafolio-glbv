@@ -9,8 +9,6 @@ const Contact = () => {
             <h1> Contacto </h1>
           </div>
 
-          <h3></h3>
-
           <hr />
         </div>
       </div>
