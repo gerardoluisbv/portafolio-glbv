@@ -22,7 +22,7 @@ const About = () => {
               me adapto a los cambios con facilidad y me enfoco a cumplir con
               las metas propuestas.
             </h3>
-            <h3></h3>
+
 
             <h3 className="sub_title"> Contacto </h3>
             <h3> Gerardo Luis B. Velasquez. </h3>

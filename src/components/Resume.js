@@ -9,7 +9,7 @@ const Resume = () => {
             <h1> Resumen </h1>
           </div>
 
-          <h3></h3>
+          
 
           <hr />
         </div>
