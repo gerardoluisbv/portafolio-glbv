@@ -71,7 +71,6 @@ export const Navbar = () => {
               <span> Resumen </span>
             </NavLink>
 
-
             <NavLink
               className={({ isActive }) =>
                 "nav-text" + (isActive ? " activated" : "")
@@ -79,9 +78,7 @@ export const Navbar = () => {
               to="/contact"
             >
               <span> Contacto</span>
-            
             </NavLink>
-
           </div>
         </nav>
       </div>

@@ -1,18 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import 'animate.css';
+import "animate.css";
 
-import { Routes, Route, BrowserRouter } from "react-router-dom"
-import About from '../components/About';
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import About from "../components/About";
 
-import Home from '../components/Home';
-import Navbar from '../components/ui/Navbar';
-import Works from '../components/Works';
-import Resume from '../components/Resume';
-import Contact from '../components/Contact';
-import BottomNavigation from '../components/ui/BottomNavigation';
+import Home from "../components/Home";
+import Navbar from "../components/ui/Navbar";
+import Works from "../components/Works";
+import Resume from "../components/Resume";
+import Contact from "../components/Contact";
+import BottomNavigation from "../components/ui/BottomNavigation";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const AppWrapper = styled.div`
   min-height: 100vh;
@@ -21,28 +21,22 @@ const AppWrapper = styled.div`
 `;
 
 export const AppRouter = () => {
-    return (
-        <>     
-       <AppWrapper>
+  return (
+    <>
+      <AppWrapper>
+        <BrowserRouter>
+          <Navbar />
 
-         <BrowserRouter>
-            <Navbar />
-            
-                    <Routes>
-                        <Route  path="about" element={<About />}/>
-                        <Route  path="works" element={<Works />}/>
-                        <Route  path="resume" element={<Resume />}/>
-                        <Route  path="contact" element={<Contact />}/>
-                        <Route path="/*" element={<Home />} />
-                       
-                    </Routes>
-                <BottomNavigation />  
-            </BrowserRouter>
-
-       </AppWrapper>
-          
-      
-        </>
-    )
-}
-
+          <Routes>
+            <Route path="about" element={<About />} />
+            <Route path="works" element={<Works />} />
+            <Route path="resume" element={<Resume />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="/*" element={<Home />} />
+          </Routes>
+          <BottomNavigation />
+        </BrowserRouter>
+      </AppWrapper>
+    </>
+  );
+};

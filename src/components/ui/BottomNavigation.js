@@ -1,161 +1,107 @@
-import React from 'react'
+import React from "react";
 
+import { NavLink } from "react-router-dom";
 
-
-import {  NavLink  } from "react-router-dom";
-
-import styled from 'styled-components';
-import IconHomeSvg from '../../icons/IconHomeSvg';
-import IconAbout from '../../icons/IconAbout';
-import IconResume from '../../icons/IconResume';
-import IconWorks from '../../icons/IconWorks';
-import IconContact from '../../icons/IconContact';
-
-
-
+import styled from "styled-components";
+import IconHomeSvg from "../../icons/IconHomeSvg";
+import IconAbout from "../../icons/IconAbout";
+import IconResume from "../../icons/IconResume";
+import IconWorks from "../../icons/IconWorks";
+import IconContact from "../../icons/IconContact";
 
 const StyledLink = styled(NavLink)`
+  width: 25px;
+  display: flex;
+  justify-content: center;
 
-width:25px;
-display:flex;
-justify-content:center;
-
-svg {
-    fill: #F0F8FF;
-    height:35px;
+  svg {
+    fill: #f0f8ff;
+    height: 35px;
   }
-   
- 
+
   &.active {
     color: #0093d3;
- 
-  
-    svg {
-        fill:#0093d3;   
-        border-bottom: 2px solid #0093d3;
-        margin-bottom:2px;
-        padding-bottom:2px;
-      }
 
+    svg {
+      fill: #0093d3;
+      border-bottom: 2px solid #0093d3;
+      margin-bottom: 2px;
+      padding-bottom: 2px;
+    }
   }
 
-
-
   @media (min-width: 990px) {
-    margin-bottom:2vh;
-    width:20px;
-    height:20px;
-}
-
-
-  
+    margin-bottom: 2vh;
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 const Main = styled.div`
-    position:fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    bottom: 25px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  bottom: 25px;
 
-    z-index:900;
- 
+  z-index: 900;
 
-    @media (min-width: 990px) {
-       
-       
-        width: 30px;
-        bottom:30px;
-        right:30px;
-       
-    }
-
+  @media (min-width: 990px) {
+    width: 30px;
+    bottom: 30px;
+    right: 30px;
+  }
 `;
 
 const Content = styled.div`
-   
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 85%; 
- 
-   
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 85%;
 `;
 
 const NavBottom = styled.div`
-   
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
 
-   
-     
-       
-    @media (min-width: 990px) {
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items:end;
-       
-    }
-
-   
+  @media (min-width: 990px) {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+  }
 `;
-
-
 
 const BottomNavigation = () => {
   return (
     <Main>
-        <Content>
-        
-            <NavBottom>
-                <StyledLink to="/" >
-                      
-                    <IconHomeSvg color= { '#FFF' } />                               
-                    
-                </StyledLink>
-                
+      <Content>
+        <NavBottom>
+          <StyledLink to="/">
+            <IconHomeSvg color={"#FFF"} />
+          </StyledLink>
 
-                    <StyledLink to="/about" >
-                        <IconAbout />
-                    </StyledLink>
+          <StyledLink to="/about">
+            <IconAbout />
+          </StyledLink>
 
+          <StyledLink to="/works">
+            <IconWorks />
+          </StyledLink>
 
-                    <StyledLink
-                        
-                        to="/works"
-                    >
-                    
-                       <IconWorks />
-                     
-                    </StyledLink>
+          <StyledLink to="/resume">
+            <IconResume />
+          </StyledLink>
 
-
-                    <StyledLink
-                        
-                        to="/resume"
-                    >
-                      <IconResume />
-                    </StyledLink>
-
-
-                    <StyledLink
-                        
-                        to="/contact"
-                    >
-                       <IconContact/>
-                    </StyledLink>
-                   
-
-                    
-                </NavBottom>    
-         
-        </Content>   
-    
-    </Main>    
-  )
-}
+          <StyledLink to="/contact">
+            <IconContact />
+          </StyledLink>
+        </NavBottom>
+      </Content>
+    </Main>
+  );
+};
 
 export default BottomNavigation;
