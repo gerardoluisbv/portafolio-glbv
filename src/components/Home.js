@@ -1,6 +1,9 @@
 import React from "react";
 import "./home.css";
 
+import { OutbrainWidget } from 'react-outbrain-widget';
+
+
 import lconoGithub from "../../src/social-media-icons/icons8-github.svg";
 import lconoLinkedin from "../../src/social-media-icons/icons8-linkedin.svg";
 import lconoStackoverflow from "../../src/social-media-icons/icons8-stackovelflow.svg";
@@ -8,12 +11,15 @@ import lconoTwitter from "../../src/social-media-icons/icons8-twitter.svg";
 import lconoFacebookMenuSvg from "../../src/social-media-icons/icons8-facebook.svg";
 
 const Home = () => {
+
+
   return (
+
     <div className="home animate__animated animate__fadeIn animate__delay-0.8s">
       <div className="container_home homeImage">
         <div className="content_about">
           <div>
-            <h1 className="title_principal"> Hola, soy Gerardo.</h1>
+            <h1 className="title_principal"> Holaa, soy Gerardo.</h1>
           </div>
 
           <div className="contact_details">
@@ -95,7 +101,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <OutbrainWidget dataSrc="https://gerardoluisbv.com/" dataWidgetId="AR_1" />
     </div>
+
+    
   );
 };
 
