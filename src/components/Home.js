@@ -101,7 +101,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <OutbrainWidget dataSrc="https://gerardoluisbv.com/" dataWidgetId="AR_1" />
+    
+     
+       <OutbrainWidget dataSrc="https://gerardoluisbv.com/" dataWidgetId="AR_1" />
+
+  
+  
     </div>
 
     
