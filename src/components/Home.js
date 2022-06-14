@@ -103,7 +103,7 @@ const Home = () => {
       </div>
     
      
-       <OutbrainWidget dataSrc="https://gerardoluisbv.com/" dataWidgetId="AR_1" />
+       <OutbrainWidget dataSrc="http://gerardoluisbv.com/" dataWidgetId="AR_1" />
 
   
   
