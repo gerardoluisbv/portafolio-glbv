@@ -19,7 +19,7 @@ const Home = () => {
       <div className="container_home homeImage">
         <div className="content_about">
           <div>
-            <h1 className="title_principal"> Holaa, soy Gerardo.</h1>
+            <h1 className="title_principal"> Hola, soy Gerardo.</h1>
           </div>
 
           <div className="contact_details">
@@ -103,7 +103,7 @@ const Home = () => {
       </div>
     
      
-       <OutbrainWidget dataSrc="http://gerardoluisbv.com/" dataWidgetId="AR_1" />
+       <OutbrainWidget dataSrc="http://localhost:3000/" dataWidgetId="AR_1" />
 
   
   
